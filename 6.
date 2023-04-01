@@ -1,0 +1,57 @@
+[12:29 PM, 4/1/2023] Heyyy Ramm: #include <stdio.h> // matrix multiplication
+
+void multiplyMatrices(int mat1[][2], int mat2[][2], int result[][2]);
+
+int main()
+{
+    int mat1[2][2], mat2[2][2], result[2][2];
+    int i, j;
+
+    printf("Enter elements of matrix 1:\n");
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+
+    printf("Enter elements of matrix 2:\n");
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+
+    multiplyMatrices(mat1, mat2, result);
+
+    printf("Result of matrix multiplication:\n");
+    for(i = 0; i < 2; i++)
+    {
+        for(j = 0; j < 2; j++)
+        {
+            printf("%d ", result[i][j]);
+        }
+        prin…
+[12:29 PM, 4/1/2023] Heyyy Ramm: #include <stdio.h> // print given pattern
+
+int main()
+{
+    int num, max, i, j;
+    printf("Enter the number to be printed: ");
+    scanf("%d", &num);
+    printf("Enter the maximum number of times to be printed: ");
+    scanf("%d", &max);
+    for(i = 1; i <= max; i++)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            printf("%d ", num);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
